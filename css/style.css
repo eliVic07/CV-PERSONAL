@@ -1,0 +1,353 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    background-color: #f5f7fa;
+
+    color: #212529;
+}
+
+.navbar {
+    box-shadow:
+        0 3px 10px rgba(0, 0, 0, 0.25);
+}
+
+.navbar-brand {
+    font-size: 1.3rem;
+}
+
+.nav-link {
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    color: #0d6efd !important;
+}
+
+.hero {
+    min-height: 650px;
+
+    display: flex;
+
+    align-items: center;
+
+    padding-top: 100px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #06245c,
+            #1261b1
+        );
+
+    color: white;
+}
+
+.hero h1 {
+    font-size: 4rem;
+}
+
+.hero h2 {
+    color: #dbe9ff;
+}
+
+.hero .lead {
+    max-width: 700px;
+
+    line-height: 1.7;
+}
+
+.foto-perfil {
+
+    width: 250px;
+
+    height: 250px;
+
+    object-fit: cover;
+
+    border: 6px solid white;
+
+    transition: 0.3s;
+}
+
+.foto-perfil:hover {
+    transform: scale(1.05);
+}
+
+.pagina {
+
+    min-height: 75vh;
+
+    padding-top: 130px;
+
+    padding-bottom: 70px;
+}
+
+section h2,
+.pagina h1 {
+
+    color: #06245c;
+}
+
+.card {
+
+    border: none;
+
+    border-radius: 15px;
+
+    transition: 0.3s;
+}
+
+.card:hover {
+
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, 0.12) !important;
+}
+
+.card h2,
+.card h3 {
+
+    color: #06245c;
+}
+
+.icono {
+
+    font-size: 55px;
+
+    margin-bottom: 15px;
+}
+
+.badge {
+
+    font-size: 0.9rem;
+
+    padding: 9px 14px;
+
+    border-radius: 20px;
+
+    margin-right: 5px;
+
+    margin-bottom: 5px;
+}
+
+.progress {
+
+    height: 12px;
+
+    border-radius: 20px;
+
+    background-color: #dee2e6;
+}
+
+.progress-bar {
+
+    background-color: #1261b1;
+
+    border-radius: 20px;
+
+    font-size: 11px;
+
+    font-weight: bold;
+}
+
+.list-group-item {
+
+    border-left: 4px solid #1261b1;
+
+    margin-bottom: 5px;
+
+    border-radius: 5px;
+}
+.breadcrumb {
+
+    background-color: white;
+
+    padding: 12px 20px;
+
+    border-radius: 10px;
+
+    box-shadow:
+        0 3px 10px rgba(0, 0, 0, 0.08);
+}
+.carousel {
+
+    border-radius: 15px;
+
+    overflow: hidden;
+}
+
+.carousel-item img {
+
+    height: 450px;
+
+    object-fit: cover;
+}
+
+.carousel-caption {
+
+    background-color:
+        rgba(0, 0, 0, 0.65);
+
+    border-radius: 10px;
+
+    padding: 15px;
+}
+
+.dropdown-menu {
+
+    border-radius: 10px;
+
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+.btn {
+
+    border-radius: 8px;
+
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+.btn-primary {
+
+    background-color: #1261b1;
+
+    border-color: #1261b1;
+}
+
+.btn-primary:hover {
+
+    background-color: #06245c;
+
+    border-color: #06245c;
+
+    transform: translateY(-2px);
+}
+
+.btn-success:hover {
+
+    transform: translateY(-2px);
+}
+footer {
+
+    background-color: #06245c;
+
+    color: white;
+
+    padding: 30px 0;
+
+    border-top: 4px solid #1261b1;
+}
+
+footer p {
+    color: white;
+}
+
+@media (max-width: 992px) {
+
+    .hero {
+
+        min-height: auto;
+
+        padding-top: 130px;
+
+        padding-bottom: 70px;
+    }
+
+    .hero h1 {
+
+        font-size: 3.2rem;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    .hero {
+
+        text-align: center;
+
+        padding-top: 120px;
+
+        padding-bottom: 60px;
+    }
+
+    .hero h1 {
+
+        font-size: 2.5rem;
+    }
+
+    .hero h2 {
+
+        font-size: 1.5rem;
+    }
+
+    .hero .lead {
+
+        font-size: 1rem;
+    }
+
+    .foto-perfil {
+
+        width: 200px;
+
+        height: 200px;
+
+        margin-top: 20px;
+    }
+
+    .carousel-item img {
+
+        height: 280px;
+    }
+
+    footer {
+
+        text-align: center;
+    }
+
+    footer .btn {
+
+        margin-top: 8px;
+    }
+}
+
+
+@media (max-width: 576px) {
+
+    .hero h1 {
+
+        font-size: 2rem;
+    }
+
+    .hero h2 {
+
+        font-size: 1.25rem;
+    }
+
+    .hero .btn {
+
+        width: 100%;
+
+        margin-bottom: 10px;
+    }
+
+    .carousel-item img {
+
+        height: 220px;
+    }
+
+    footer .btn {
+
+        width: 100%;
+
+        margin-right: 0 !important;
+    }
+}
