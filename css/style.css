@@ -10,8 +10,8 @@ html {
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #f7f3fc;
-    color: #292333;
+    background-color: #fff5f8;
+    color: #3b2430;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -22,21 +22,21 @@ main {
 }
 
 :root {
-    --morado-oscuro: #45207a;
-    --morado: #6c3fc5;
-    --morado-claro: #9b7ede;
-    --lila: #eee6fa;
-    --fondo: #f7f3fc;
+    --morado-oscuro: #8f1748;
+    --morado: #e83e8c;
+    --morado-claro: #f58bb8;
+    --lila: #fde3ee;
+    --fondo: #fff5f8;
     --blanco: #ffffff;
-    --texto: #292333;
-    --texto-suave: #66606f;
-    --borde: #e2d9ee;
+    --texto: #3b2430;
+    --texto-suave: #765b67;
+    --borde: #f0cddd;
 }
 
 .navbar {
     background-color: var(--morado-oscuro) !important;
     min-height: 60px;
-    box-shadow: 0 3px 12px rgba(69, 32, 122, 0.25);
+    box-shadow: 0 3px 12px rgba(143, 23, 72, 0.25);
 }
 
 .navbar-brand {
@@ -46,7 +46,7 @@ main {
 }
 
 .navbar-nav .nav-link {
-    color: #eee8f7 !important;
+    color: #fceaf2 !important;
     font-size: 0.95rem;
     margin-left: 8px;
     transition: 0.3s;
@@ -131,7 +131,7 @@ main {
 }
 
 .hero p {
-    color: #f5f0fb;
+    color: #fff0f5;
     font-size: 1.1rem;
     line-height: 1.8;
     max-width: 650px;
@@ -144,7 +144,7 @@ main {
     object-fit: cover;
     border-radius: 50%;
     border: 6px solid white;
-    box-shadow: 0 8px 25px rgba(69, 32, 122, 0.35);
+    box-shadow: 0 8px 25px rgba(143, 23, 72, 0.35);
     display: block;
     margin: auto;
 }
@@ -198,14 +198,14 @@ main {
     border: none;
     border-radius: 15px;
     background-color: var(--blanco);
-    box-shadow: 0 5px 18px rgba(69, 32, 122, 0.10);
+    box-shadow: 0 5px 18px rgba(143, 23, 72, 0.10);
     height: 100%;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(69, 32, 122, 0.17);
+    box-shadow: 0 10px 25px rgba(143, 23, 72, 0.17);
 }
 
 .card-body {
@@ -299,7 +299,7 @@ main {
 .habilidad .progress {
     height: 25px;
     margin-top: 8px;
-    background-color: #e3dced;
+    background-color: #f3d7e3;
     border-radius: 20px;
 }
 
@@ -399,7 +399,7 @@ main {
 }
 
 .etiqueta.educacion {
-    background-color: #8b5fbf;
+    background-color: #c72f68;
 }
 
 .proyectos-seccion {
@@ -413,20 +413,25 @@ main {
     border: none;
     border-radius: 15px;
     background-color: white;
-    box-shadow: 0 5px 18px rgba(69, 32, 122, 0.10);
+    box-shadow: 0 5px 18px rgba(143, 23, 72, 0.10);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .proyecto-card:hover {
     transform: translateY(-7px);
-    box-shadow: 0 12px 28px rgba(69, 32, 122, 0.18);
+    box-shadow: 0 12px 28px rgba(143, 23, 72, 0.18);
 }
 
 .proyecto-card .card-img-top {
     width: 100%;
-    height: 220px;
+    height: 310px;
     object-fit: cover;
     display: block;
+}
+
+.proyecto-card:first-child .card-img-top {
+    object-fit: contain;
+    background-color: white;
 }
 
 .proyecto-card .card-body {
@@ -461,7 +466,7 @@ main {
     background-color: white;
     border-radius: 15px;
     padding: 35px;
-    box-shadow: 0 5px 18px rgba(69, 32, 122, 0.10);
+    box-shadow: 0 5px 18px rgba(143, 23, 72, 0.10);
 }
 
 .contacto-card h2 {
@@ -478,12 +483,12 @@ main {
 .contacto-card .form-control {
     border-radius: 10px;
     padding: 12px;
-    border: 1px solid #d8cfe5;
+    border: 1px solid #ebc7d7;
 }
 
 .contacto-card .form-control:focus {
     border-color: var(--morado);
-    box-shadow: 0 0 0 0.2rem rgba(108, 63, 197, 0.15);
+    box-shadow: 0 0 0 0.2rem rgba(232, 62, 140, 0.15);
 }
 
 .btn-whatsapp {
